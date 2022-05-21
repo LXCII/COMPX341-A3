@@ -1,6 +1,6 @@
 @ECHO OFF
 if not "%~1"=="" goto :main
-echo Please provide a commit message.
+echo Error: Missing argument. Please provide a commit message.
 exit /B 1
 
 :main
