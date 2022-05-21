@@ -1,8 +1,9 @@
 @ECHO OFF
+set msg=%1
 npm install && npm run build && (
 	cd ..
 	git add . 
-	git commit -m "COMPX341-22A-A3 Committing from CI/CD Pipeline"
+	git commit -m %msg%
 	git push origin main
 	cd assets
 	npm run start
